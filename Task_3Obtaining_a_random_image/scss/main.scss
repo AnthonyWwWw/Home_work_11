@@ -1,0 +1,43 @@
+@import './null.scss';
+
+///----------------------import------------------///
+
+///-------------------variables------------------///
+
+///-----------------end-variables----------------///
+
+///----------------------global------------------///
+
+///--------------------end-global------------------///
+
+
+///-----------------------body--------------------///
+.content{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.custom-image{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.button{
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: rgb(115, 202, 95);
+    color: rgb(255, 255, 255);
+    transition-duration: 1s;
+    transition-property: all;
+
+    &:hover{
+        background-color: rgba(0, 255, 0, 0.696);
+    }
+}
+
+///--------------------END-body-------------------///

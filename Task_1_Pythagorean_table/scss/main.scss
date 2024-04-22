@@ -1,0 +1,65 @@
+@import './null.scss';
+
+///----------------------import------------------///
+
+///-------------------variables------------------///
+
+///-----------------end-variables----------------///
+
+///----------------------global------------------///
+
+///--------------------end-global------------------///
+
+
+///-----------------------body--------------------///
+.conteiner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 300px;
+  height: 200px;
+}
+
+.buttom{
+  width: 200px;
+  height: 30px;
+  border-radius: 30px;
+  transition-property: all;
+  transition-duration: 1s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:hover{
+    background-color: rgb(55, 165, 129);
+    color: azure;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  } 
+}
+
+#table {
+      width: 1000px;
+      margin: 0 auto;
+      border-collapse: collapse;
+
+      tr {
+          background-color: #f2f2f2;
+          padding: 8px;
+          border: 1px solid #ddd;
+
+          & :first-child{
+            background-color: #ff8787;
+          }
+
+      }
+
+      td {
+          padding: 8px;
+          border: 1px solid #ddd;
+          text-align: center;
+
+          &:hover {
+              background-color: #f2f2f2;
+          }
+      }
+  }
+///--------------------END-body-------------------///

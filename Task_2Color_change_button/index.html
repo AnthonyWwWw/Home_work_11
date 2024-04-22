@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css"  href="css/main.css">
+</head>
+<body>
+    <!-- 29. Кнопка зміни кольору
+
+        Є блок із текстом на сторінці та кнопку. При натисканні на кнопку текст змінює колір. 
+        При повторному натисканні – повертається попередній колір -->
+        
+    <div class="content">
+        <div class="text" id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quas eaque nulla blanditiis ullam dolorem, ratione placeat animi officia corrupti?</div>
+        <button class="button" id="button">Змінити колір</button>
+    </div>
+
+    <script>
+        let statysButton = true;
+
+        document.querySelector("#button").addEventListener("click", function(){
+            let text = document.querySelector("#text");
+
+            if (statysButton){
+                text.style.color = "red";
+                statysButton = false;
+            }else{
+                text.style.color = "black";
+                statysButton = true;
+            }
+       });
+    </script>
+</body>
+</html>
